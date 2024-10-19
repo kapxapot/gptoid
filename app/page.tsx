@@ -12,29 +12,29 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
+  title: "GPToid - Telegram bot with ChatGPT access",
+  description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3. Free tier, built-in roles, custom prompts, beautiful formatting.",
   openGraph: {
     type: "website",
-    url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    url: "https://github.com/kapxapot/aws-gpt-bot",
+    title: "GPToid - Telegram bot with ChatGPT access",
+    description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3",
     images: [
       {
-        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
+        url: "https://i.imgur.com/GI3Exjr.png",
         width: 1200,
         height: 630,
-        alt: "Shadcn - Landing template",
+        alt: "GPToid - Telegram bot with ChatGPT access",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    site: "https://github.com/kapxapot/aws-gpt-bot",
+    title: "GPToid - Telegram bot with ChatGPT access",
+    description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3",
     images: [
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
+      "https://i.imgur.com/GI3Exjr.png",
     ],
   },
 };
@@ -43,11 +43,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
-      <BenefitsSection />
+      {/* <SponsorsSection /> */}
+      {/* <BenefitsSection /> */}
       <FeaturesSection />
       <ServicesSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <TeamSection />
       <CommunitySection />
       <PricingSection />
