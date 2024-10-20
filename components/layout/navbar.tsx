@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { Github, MenuIcon } from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -12,11 +12,9 @@ import {
 import { Separator } from "../ui/separator";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -35,21 +33,25 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#features",
+    label: "Features",
   },
   {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
+    href: "#community",
+    label: "Community",
   },
   {
     href: "#faq",
     label: "FAQ",
   },
+  {
+    href: "#terms",
+    label: "Terms",
+  },
+  {
+    href: "#privacy",
+    label: "Privacy",
+  }
 ];
 
 // const featureList: FeatureProps[] = [
@@ -79,8 +81,8 @@ export const Navbar = () => {
           alt="GPToid Logo"
           src="/gptoid-logo.svg"
           className="size-9"
-          width={36}
-          height={36}
+          width={100}
+          height={100}
         />
         GPToid
       </Link>
@@ -88,7 +90,7 @@ export const Navbar = () => {
       <div className="flex items-center lg:hidden">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <Menu
+            <MenuIcon
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer lg:hidden"
             />
@@ -103,7 +105,13 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
                     {/* <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
-                    <Image src="/gptoid-logo.svg" alt="GPToid Logo" />
+                    <Image
+                      src="/gptoid-logo.svg"
+                      alt="GPToid Logo"
+                      className="size-9"
+                      width={100}
+                      height={100}
+                    />
                     GPToid
                   </Link>
                 </SheetTitle>

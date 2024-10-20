@@ -1,6 +1,14 @@
+import GithubIcon from "@/components/icons/github-icon";
+import LinkedInIcon from "@/components/icons/linkedin-icon";
+import XIcon from "@/components/icons/x-icon";
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
+import { BotIcon, HeartIcon, Instagram, RssIcon, SendIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+
+const baseYear = 2024;
+const now = new Date();
+const year = now.getFullYear();
 
 export const FooterSection = () => {
   return (
@@ -9,101 +17,91 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+              {/* <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" /> */}
+              <Image
+                alt="GPToid Logo"
+                src="/gptoid-logo.svg"
+                className="size-9"
+                width={100}
+                height={100}
+              />
 
-              <h3 className="text-2xl">Shadcn</h3>
+              <h3 className="text-2xl">GPToid</h3>
             </Link>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
-            </div>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
-              </Link>
-            </div>
+            <Link href="https://t.me/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+              <SendIcon />
+              Telegram
+            </Link>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
+            <Link href="https://x.com/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+              <XIcon className="size-6" />
+              X / Twitter
+            </Link>
+
+            <Link href="https://instagram.com/gptoid_bot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+              <Instagram />
+              Instagram
+            </Link>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
-              </Link>
-            </div>
+            <h3 className="font-bold text-lg">Resources</h3>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
+            <Link href="https://t.me/GPToid_Bot" className="opacity-60 hover:opacity-100 flex gap-2">
+              <BotIcon />
+              Bot
+            </Link>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
-              </Link>
-            </div>
-          </div>
+            <Link href="https://t.me/GPToid" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+              <RssIcon />
+              News
+            </Link>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
-              </Link>
-            </div>
+            <Link href="https://t.me/GPToidFanClub" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+              <HeartIcon />
+              Fan Club
+            </Link>
           </div>
         </div>
 
         <Separator className="my-6" />
-        <section className="">
-          <h3 className="">
-            &copy; 2024 Designed and developed by
+
+        <section>
+          <h3 className="mb-4">
+            All rights reserved. &copy; {baseYear}{year > baseYear && (`—${year}`)} GPToid
+          </h3>
+
+          <h3 className="mb-1 flex gap-2">
+            Created by
+
+            <Link
+              target="_blank"
+              href="https://github.com/kapxapot"
+              className="text-primary transition-all border-primary hover:border-b-2"
+            >
+              Sergey Atroshchenko
+            </Link>
+
+            <Link href="https://www.linkedin.com/in/sergey-atroshchenko" target="_blank">
+              <LinkedInIcon />
+            </Link>
+
+            <Link href="https://github.com/kapxapot" target="_blank">
+              <GithubIcon />
+            </Link>
+
+            <Link href="https://x.com/kapxapot" target="_blank">
+              <XIcon />
+            </Link>
+          </h3>
+
+          <h3 className="opacity-60">
+            Original design by
             <Link
               target="_blank"
               href="https://github.com/leoMirandaa"

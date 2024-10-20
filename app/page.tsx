@@ -1,17 +1,13 @@
-import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
-import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
-import { PricingSection } from "@/components/layout/sections/pricing";
-import { ServicesSection } from "@/components/layout/sections/services";
-import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { PrivacySection } from "@/components/layout/sections/privacy";
+import { TermsSection } from "@/components/layout/sections/terms";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "GPToid - Telegram bot with ChatGPT access",
   description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3. Free tier, built-in roles, custom prompts, beautiful formatting.",
   openGraph: {
@@ -46,13 +42,15 @@ export default function Home() {
       {/* <SponsorsSection /> */}
       {/* <BenefitsSection /> */}
       <FeaturesSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       {/* <TestimonialSection /> */}
-      <TeamSection />
+      {/* <TeamSection /> */}
       <CommunitySection />
-      <PricingSection />
-      <ContactSection />
+      {/* <PricingSection /> */}
       <FAQSection />
+      {/* <ContactSection /> */}
+      <TermsSection />
+      <PrivacySection />
       <FooterSection />
     </>
   );

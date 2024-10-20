@@ -9,41 +9,45 @@ interface FeaturesProps {
 }
 
 const featureList: FeaturesProps[] = [
+  // {
+  //   icon: "BotMessageSquare",
+  //   title: "Chat with ChatGPT",
+  //   description: "Engage in dynamic conversations with ChatGPT, your AI-powered assistant. Whether you need information, advice, or simply want to chat, GPToid is here to help!"
+  // },
+  // {
+  //   icon: "Image",
+  //   title: "Create Stunning DALL-E 3 Images",
+  //   description: "Transform your ideas into breathtaking visuals with DALL-E 3. Generate unique images based on your prompts and share them directly in Telegram."
+  // },
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+    icon: "Flower",
+    title: "Beautifully Rendered Outputs",
+    description: "Receive AI-generated responses and images beautifully formatted within Telegram, making sharing and showcasing your creations easy and visually appealing."
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+    icon: "VenetianMask",
+    title: "Multiple Modes & Built-in Roles",
+    description: "Explore different modes tailored for various tasks and interactions. Choose from several built-in roles to enhance your experience, whether you're seeking creativity, information, or companionship."
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+    icon: "Bolt",
+    title: "Custom Prompt Configuration",
+    description: "Personalize your interactions by setting up custom prompts. Tailor the AI's responses to suit your specific needs and preferences."
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
-    description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+    icon: "Globe",
+    title: "Bilingual User Interface",
+    description: "Navigate effortlessly with our user-friendly interface available in both Russian and English. Enjoy a smooth experience, no matter your language preference."
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+    icon: "Coins",
+    title: "Affordable Pricing",
+    description: "Enjoy a free tier to explore GPToid's capabilities, with low-cost paid bundles available for advanced features. Experience high-quality AI without breaking the bank!"
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+    icon: "Star",
+    title: "Flexible Payment Options",
+    description: "Conveniently pay in rubles or Telegram Stars. We offer a variety of payment methods to make your experience seamless."
   },
 ];
 
@@ -55,13 +59,11 @@ export const FeaturesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Why <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">GPToid</span>?
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        There are many AI tools today. What makes GPToid stand out?
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
