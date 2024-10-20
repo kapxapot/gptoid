@@ -49,7 +49,7 @@ export function TermsSection() {
 
         <h3 className="font-bold">8. Disclaimer of Warranties</h3>
 
-        <p>GPToid is provided on an "as-is" and "as-available" basis. We do not warrant that the service will be uninterrupted, or free of errors. Your use of GPToid is at your own risk.</p>
+        <p>GPToid is provided on an &quot;as-is&quot; and &quot;as-available&quot; basis. We do not warrant that the service will be uninterrupted, or free of errors. Your use of GPToid is at your own risk.</p>
 
         <h3 className="font-bold">9. Limitation of Liability</h3>
 

@@ -10,7 +10,7 @@ export function PrivacySection() {
       <div className="space-y-3">
         <p><strong>Effective Date:</strong> Oct 20, 2024</p>
 
-        <p>This Privacy Policy describes how GPToid ("we," "us," or "our") collects, uses, and protects your information when you use our Telegram bot.</p>
+        <p>This Privacy Policy describes how GPToid (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and protects your information when you use our Telegram bot.</p>
 
         <h3 className="font-bold">1. Information We Collect</h3>
 
@@ -36,7 +36,7 @@ export function PrivacySection() {
 
         <h3 className="font-bold">3. User Data Isolation</h3>
 
-        <p>We ensure that different users' data is isolated, meaning that your data is not shared with other users of the bot. Each user's data is kept private and secure.</p>
+        <p>We ensure that different users&apos; data is isolated, meaning that your data is not shared with other users of the bot. Each user&apos;s data is kept private and secure.</p>
 
         <h3 className="font-bold">4. Data Security</h3>
 
