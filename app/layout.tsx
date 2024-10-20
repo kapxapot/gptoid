@@ -3,6 +3,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -23,6 +25,7 @@ export default function RootLayout({
 
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
