@@ -33,36 +33,36 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
 
-            <Link href="https://t.me/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+            <Link href="https://t.me/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <SendIcon />
               Telegram
             </Link>
 
-            <Link href="https://x.com/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
-              <XIcon className="size-6" />
-              X / Twitter
-            </Link>
-
-            <Link href="https://instagram.com/gptoid_bot" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+            <Link href="https://instagram.com/gptoid_bot" target="_blank" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <Instagram />
               Instagram
+            </Link>
+
+            <Link href="https://x.com/kapxapot" target="_blank" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
+              <XIcon className="size-6" />
+              X
             </Link>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Resources</h3>
 
-            <Link href="https://t.me/GPToid_Bot" className="opacity-60 hover:opacity-100 flex gap-2">
+            <Link href="https://t.me/GPToid_Bot" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <BotIcon />
               Bot
             </Link>
 
-            <Link href="https://t.me/GPToid" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+            <Link href="https://t.me/GPToid" target="_blank" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <RssIcon />
               News
             </Link>
 
-            <Link href="https://t.me/GPToidFanClub" target="_blank" className="opacity-60 hover:opacity-100 flex gap-2">
+            <Link href="https://t.me/GPToidFanClub" target="_blank" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <HeartIcon />
               Fan Club
             </Link>
@@ -76,9 +76,8 @@ export const FooterSection = () => {
             All rights reserved. &copy; {baseYear}{year > baseYear && (`—${year}`)} GPToid
           </h3>
 
-          <h3 className="mb-1 flex gap-2">
-            Created by
-
+          <h3 className="mb-1 flex flex-wrap gap-x-2">
+            <div>Created by</div>
             <Link
               target="_blank"
               href="https://github.com/kapxapot"
@@ -86,21 +85,22 @@ export const FooterSection = () => {
             >
               Sergey Atroshchenko
             </Link>
+            <div className="flex gap-2">
+              <Link href="https://www.linkedin.com/in/sergey-atroshchenko" target="_blank">
+                <LinkedInIcon />
+              </Link>
 
-            <Link href="https://www.linkedin.com/in/sergey-atroshchenko" target="_blank">
-              <LinkedInIcon />
-            </Link>
+              <Link href="https://github.com/kapxapot" target="_blank">
+                <GithubIcon />
+              </Link>
 
-            <Link href="https://github.com/kapxapot" target="_blank">
-              <GithubIcon />
-            </Link>
-
-            <Link href="https://x.com/kapxapot" target="_blank">
-              <XIcon />
-            </Link>
+              <Link href="https://x.com/kapxapot" target="_blank">
+                <XIcon />
+              </Link>
+            </div>
           </h3>
 
-          <h3 className="opacity-60">
+          <h3 className="opacity-60 mt-4 sm:mt-0">
             Original design by
             <Link
               target="_blank"

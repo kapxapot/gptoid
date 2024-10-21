@@ -25,11 +25,7 @@ export const HeroSection = () => {
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Unleash the Power of AI with
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                GPToid
-              </span>
-              !
+              Chat with AI directly in <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">Telegram</span>
             </h1>
           </div>
 
