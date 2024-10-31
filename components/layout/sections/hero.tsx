@@ -2,13 +2,10 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export const HeroSection = () => {
-  const { theme } = useTheme();
-
   const lightSrcs = ["/light1.png", "/light2.png", "/light3.png"];
   const darkSrcs = ["/dark1.png", "/dark2.png", "/dark3.png"];
 

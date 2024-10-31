@@ -1,3 +1,4 @@
+import Copyright from "@/components/copyright";
 import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
@@ -73,7 +74,7 @@ export const FooterSection = () => {
 
         <section>
           <h3 className="mb-4">
-            All rights reserved. &copy; {baseYear}{year > baseYear && (`—${year}`)} GPToid
+            <Copyright baseYear={2024} name="GPToid" />
           </h3>
 
           <h3 className="mb-1 flex flex-wrap gap-x-2">
