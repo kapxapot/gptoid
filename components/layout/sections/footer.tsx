@@ -53,7 +53,7 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Resources</h3>
 
-            <Link href="https://t.me/GPToid_Bot" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
+            <Link href="https://t.me/GPToid_Bot?start=land" className="opacity-60 hover:opacity-100 flex flex-shrink-0 gap-2">
               <BotIcon />
               Bot
             </Link>
