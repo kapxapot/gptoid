@@ -34,21 +34,21 @@ const featureList: FeaturesProps[] = [
     title: "Custom Prompt Configuration",
     description: "Personalize your interactions by setting up custom prompts. Tailor the AI's responses to suit your specific needs and preferences."
   },
-  {
-    icon: "Globe",
-    title: "Bilingual User Interface",
-    description: "Navigate effortlessly with our user-friendly interface available in both Russian and English. Enjoy a smooth experience, no matter your language preference."
-  },
+  // {
+  //   icon: "Globe",
+  //   title: "Bilingual User Interface",
+  //   description: "Navigate effortlessly with our user-friendly interface available in both Russian and English. Enjoy a smooth experience, no matter your language preference."
+  // },
   {
     icon: "Coins",
     title: "Affordable Pricing",
     description: "Enjoy a free tier to explore GPToid's capabilities, with low-cost paid bundles available for advanced features. Experience high-quality AI without breaking the bank!"
   },
-  {
-    icon: "Star",
-    title: "Flexible Payment Options",
-    description: "Conveniently pay in rubles or Telegram Stars. We offer a variety of payment methods to make your experience seamless."
-  },
+  // {
+  //   icon: "Star",
+  //   title: "Flexible Payment Options",
+  //   description: "Conveniently pay in rubles or Telegram Stars. We offer a variety of payment methods to make your experience seamless."
+  // },
 ];
 
 export const FeaturesSection = () => {
@@ -66,7 +66,7 @@ export const FeaturesSection = () => {
         There are many AI tools today. What makes GPToid stand out?
       </h3>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid max-w-lg sm:max-w-full sm:grid-cols-2 lg:max-w-5xl gap-4 mx-auto">
         {featureList.map(({ icon, title, description }) => (
           <div key={title}>
             <Card className="h-full bg-background border-0 shadow-none">
@@ -80,7 +80,9 @@ export const FeaturesSection = () => {
                   />
                 </div>
 
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="text-center">
+                  {title}
+                </CardTitle>
               </CardHeader>
 
               <CardContent className="text-muted-foreground text-center">
