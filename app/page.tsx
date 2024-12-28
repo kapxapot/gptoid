@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3",
     images: [
       {
-        url: "https://i.imgur.com/YM65DQq.png",
+        url: "https://gptoid.vercel.app/x.png",
         width: 1902,
         height: 1080,
         alt: "GPToid - Telegram bot with ChatGPT access",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "GPToid - Telegram bot with ChatGPT access",
     description: "GPToid is a Telegram bot that allows talking with ChatGPT and image generation using DALL-E 3",
     images: [
-      "https://i.imgur.com/YM65DQq.png",
+      "https://gptoid.vercel.app/x.png",
     ],
   },
 };
