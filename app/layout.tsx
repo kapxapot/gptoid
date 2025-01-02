@@ -7,9 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout({ children }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -25,6 +23,7 @@ export default function RootLayout({
 
           {children}
         </ThemeProvider>
+
         <Analytics />
       </body>
     </html>

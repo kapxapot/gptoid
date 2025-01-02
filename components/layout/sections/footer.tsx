@@ -7,13 +7,9 @@ import { BotIcon, HeartIcon, Instagram, RssIcon, SendIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const baseYear = 2024;
-const now = new Date();
-const year = now.getFullYear();
-
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container py-24 sm:py-32">
+    <footer id="footer" className="container pt-24 pb-12 sm:pt-32 sm:pb-16">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">

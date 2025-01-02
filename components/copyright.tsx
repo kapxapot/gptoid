@@ -1,7 +1,9 @@
-interface Props {
+"use client";
+
+type Props = {
   baseYear: number;
   name: string;
-}
+};
 
 export default function Copyright({ baseYear, name }: Props) {
   const now = new Date();
