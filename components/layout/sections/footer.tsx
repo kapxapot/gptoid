@@ -83,10 +83,6 @@ export const FooterSection = () => {
               Sergey Atroshchenko
             </Link>
             <div className="flex gap-2">
-              <Link href="https://www.linkedin.com/in/sergey-atroshchenko" target="_blank">
-                <LinkedInIcon />
-              </Link>
-
               <Link href="https://github.com/kapxapot" target="_blank">
                 <GithubIcon />
               </Link>
