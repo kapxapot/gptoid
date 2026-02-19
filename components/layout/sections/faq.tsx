@@ -16,14 +16,14 @@ const FAQList: FAQProps[] = [
   {
     question: "Which OpeanAI models are used in GPToid?",
     answer: <ul className="list-disc pl-5 space-y-2">
-      <li>GPToid uses <strong>GPT-4o mini</strong> as a default text model.</li>
-      <li><strong>GPT-4o</strong> is used as a premium model (you need to buy 🍥 gptokens to access it).</li>
+      <li>GPToid uses <strong>GPT-5 mini</strong> as a default text model.</li>
+      <li><strong>GPT-5</strong> is used as a premium model (you need to buy 🍥 gptokens to access it).</li>
       <li>Images are generated using <strong>DALL-E 3</strong>.</li>
     </ul>
   },
   {
     question: "Can I use GPToid for free?",
-    answer: <>Yes. The free tier includes 10 daily requests to <strong>GPT-4o mini</strong>, the monthly limit is 150. Also, 3 <strong>DALL-E 3</strong> images can be generated for free every week.</>
+    answer: <>Yes. The free tier includes 10 daily requests to <strong>GPT-5 mini</strong>, the monthly limit is 150. Also, 3 <strong>DALL-E 3</strong> images can be generated for free every week.</>
   },
   {
     question: "Is GPToid friendly for newcomers?",
@@ -35,11 +35,11 @@ const FAQList: FAQProps[] = [
   },
   {
     question: "What are 🍥 gptokens?",
-    answer: <>🍥 Gptokens are a special GPToid currency used to access premium models (<strong>GPT-4o</strong> and <strong>DALL-E 3</strong>). 🍥 1 gptoken equals $0.02.</>
+    answer: <>🍥 Gptokens are a special GPToid currency used to access premium models (<strong>GPT-5</strong> and <strong>DALL-E 3</strong>). 🍥 1 gptoken equals $0.02.</>
   },
   {
     question: "Are there paid services?",
-    answer: <>If the free tier is not enough, you can buy product bundles in the bot. There are two product groups: <strong>GPT-4o mini</strong> request bundles and 🍥 gptoken bundles that give access to <strong>GPT-4o</strong> and <strong>DALL-E 3</strong>. All products do not expire. The 🍥 gptoken cost is fixed for image generation and depends on the text model and the actual token size of a request/response to the OpenAI API.</>
+    answer: <>If the free tier is not enough, you can buy product bundles in the bot. There are two product groups: <strong>GPT-5 mini</strong> request bundles and 🍥 gptoken bundles that give access to <strong>GPT-5</strong> and <strong>DALL-E 3</strong>. All products do not expire. The 🍥 gptoken cost is fixed for image generation and depends on the text model and the actual token size of a request/response to the OpenAI API.</>
   },
   {
     question: "Which languages are supported?",
